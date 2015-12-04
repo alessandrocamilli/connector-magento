@@ -313,6 +313,7 @@ class TranslationImporter(Importer):
 
     _model_name = ['magento.product.category',
                    'magento.product.product',
+                   'magento.product.template'
                    ]
 
     def _get_magento_data(self, storeview_id=None):
@@ -360,6 +361,7 @@ class AddCheckpoint(ConnectorUnit):
 
     _model_name = ['magento.product.product',
                    'magento.product.category',
+                   'magento.product.template'
                    ]
 
     def run(self, openerp_binding_id):

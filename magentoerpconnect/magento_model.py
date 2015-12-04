@@ -262,8 +262,10 @@ class MagentoBackend(models.Model):
 
     @api.multi
     def import_product_product(self):
-        self._import_from_date('magento.product.product',
+        self._import_from_date('magento.product.template',
                                'import_products_from_date')
+        # self._import_from_date('magento.product.product',
+        #                        'import_products_from_date')
         return True
 
     @api.multi
